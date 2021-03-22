@@ -1,0 +1,63 @@
+<p>cours works!</p>
+
+<div>
+    {{ title }}
+  </div>
+  
+  <div>
+    <div [textContent]="title"></div>
+  </div>
+  
+  <button (click)="onClickMe()">Dire bonjour</button>
+  
+  <input type="text" value="{{ title }}" id="" />
+  <input type="text" [value]="title" id="" />
+
+  <div>
+      <input type="text" [(ngModel)]="mois">
+      <span *ngIf="mois%2==0; else sinon">
+          {{a}} est pair
+      </span>
+        <ng-template #sinon>
+        {{a}} est impair
+        </ng-template>
+  </div>
+
+  <ng-container [ngSwitch]="mois">
+      <ng-template ngSwitchCase=1>
+          janvier
+      </ng-template>
+      <ng-template ngSwitchCase=2>
+        fevrier
+    </ng-template>
+    <ng-template ngSwitchDefault>
+        Autre mois
+    </ng-template>
+  </ng-container>
+
+  <ul>
+      <li *ngFor="let i of numbers">{{i}}</li>
+  </ul>
+
+  <div>{{ prod.name }}</div>
+  <div>{{ prod.quantity }}</div>
+  <div>{{ prod.price }}</div>
+  <div>{{ prod }}</div>
+  <div>{{ produits | json }}</div>
+
+  <table>
+      <thead>
+          <th>Name</th>
+          <th>Prix</th>
+          <th>Quantite</th>
+          <th>CreateAt</th>
+      </thead>
+      <tbody>
+          <tr *ngFor="let p of produits">
+              <td>{{p.name}}</td>
+              <td>{{p.price}}</td>
+              <td>{{p.quantity}}</td>
+              <td>{{p.createdAt | date:'shortDate'}}</td>
+          </tr>
+      </tbody>
+  </table>

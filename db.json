@@ -1,0 +1,69 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "name": "Lait",
+      "quantity": 1,
+      "price": 34,
+      "promo": false,
+      "selected": true,
+      "categorieId": 3
+    },
+    {
+      "id": 2,
+      "name": "Cafe",
+      "quantity": 1,
+      "price": 34,
+      "selected": true,
+      "promo": true,
+      "categorieId": 3
+    },
+    {
+      "id": 3,
+      "name": "Miel",
+      "quantity": 1,
+      "price": 34,
+      "selected": false,
+      "promo": true,
+      "categorieId": 1
+    },
+    {
+      "name": "Chocolat",
+      "price": "2900",
+      "quantity": "6",
+      "selected": true,
+      "promo": "checkedValue",
+      "id": 4
+    },
+    {
+      "name": "Poivre",
+      "price": "500",
+      "quantity": "45",
+      "selected": true,
+      "promo": "checkedValue",
+      "id": 5
+    },
+    {
+      "name": "Sel de mer",
+      "price": "700",
+      "quantity": "150",
+      "selected": true,
+      "promo": "promo",
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Cosmetiques"
+    },
+    {
+      "id": 2,
+      "name": "Informatiques"
+    },
+    {
+      "id": 3,
+      "name": "Alimentaire"
+    }
+  ]
+}
